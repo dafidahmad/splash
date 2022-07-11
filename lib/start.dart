@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'Halaman_User.dart';
-import 'login.dart';
 
 class startScreen extends StatefulWidget {
   const startScreen({Key? key}) : super(key: key);
@@ -26,7 +24,7 @@ class _startScreenState extends State<startScreen> {
                     primary: Colors.blue,
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => navUser()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => startScreen()));
                   },
                   child: Text(
                     'START',
@@ -40,7 +38,7 @@ class _startScreenState extends State<startScreen> {
               TextButton(
                   style: TextButton.styleFrom(primary: Colors.blue),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => LoginScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => startScreen()));
                   },
                   child: Text(
                     'Login',
